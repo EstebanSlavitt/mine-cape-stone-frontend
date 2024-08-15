@@ -7,6 +7,9 @@ import { LoginPage } from "./LoginPage";
 import { SignupPage } from "./SignupPage";
 import { ProductsNewPage } from "./ProductsNewPage";
 
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "mini-capstone-api-97g1.onrender.com";
+
 const router = createBrowserRouter([
   {
     element: (
@@ -24,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <ProductsIndexPage />,
-        loader: () => axios.get("http://localhost:3000/products.json").then((response) => response.data),
+        loader: () => axios.get("/products.json").then((response) => response.data),
       },
     ],
   },
