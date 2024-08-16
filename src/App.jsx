@@ -6,7 +6,7 @@ import { Footer } from "./Footer";
 import { LoginPage } from "./LoginPage";
 import { SignupPage } from "./SignupPage";
 import { ProductsNewPage } from "./ProductsNewPage";
-
+import { Home } from "./Home";
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://mini-capstone-api-97g1.onrender.com";
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       </div>
     ),
     children: [
-      { path: "/", element: <ProductsIndexPage /> },
+      { path: "/", element: <Home /> },
       { path: "/signup", element: <SignupPage /> },
       { path: "/login", element: <LoginPage /> },
       { path: "/products/new", element: <ProductsNewPage /> },

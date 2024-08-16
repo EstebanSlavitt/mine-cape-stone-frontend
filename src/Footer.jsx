@@ -3,8 +3,8 @@ export function Footer() {
     <footer className="bg-gray-800 text-gray-200 py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
-          <h2 className="text-xl font-semibold">Stevens liitle book shop</h2>
-          <p className="text-sm">Your favorite place for books</p>
+          <h2 className="text-xl font-semibold">Elevating yoga</h2>
+          <p className="text-sm">Your favorite place for Yoga Products</p>
         </div>
         <div className="flex space-x-4 mb-4 md:mb-0">
           <a href="#" className="hover:text-white">
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
       </div>
       <div className="text-center mt-4 text-gray-500">
-        <p>&copy; 2024 Stevens book shop. All rights reserved.</p>
+        <p>&copy; 2024 All rights reserved.</p>
       </div>
     </footer>
   );
