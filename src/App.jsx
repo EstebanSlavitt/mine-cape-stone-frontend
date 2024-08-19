@@ -8,7 +8,7 @@ import { SignupPage } from "./SignupPage";
 import { ProductsNewPage } from "./ProductsNewPage";
 import { Home } from "./Home";
 axios.defaults.baseURL =
-  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://mini-capstone-api-97g1.onrender.com";
+  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://mini-capstone-api-dfdz.onrender.com";
 
 const router = createBrowserRouter([
   {
